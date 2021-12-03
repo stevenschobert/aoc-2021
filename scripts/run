@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+HAXE_PATH=$1
+HAXE_DIR=$(dirname $1)
+HAXE_FILE=$(echo "${HAXE_PATH##*/}")
+HAXE_MODULE=$(echo "${HAXE_FILE%.hx}")
+
+cd $HAXE_DIR
+
+haxe --interp --main $HAXE_MODULE
