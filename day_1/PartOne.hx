@@ -1,7 +1,7 @@
 import sys.io.File;
 import haxe.iterators.StringIteratorUnicode;
 
-class Main {
+class PartOne {
     static public function main() {
         var input = File.getContent("input.txt");
         var iter = StringIteratorUnicode.unicodeIterator(input);
